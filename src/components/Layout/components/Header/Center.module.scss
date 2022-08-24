@@ -1,0 +1,99 @@
+.center-container {
+    position: relative;
+    display: flex;
+    width: 361px;
+}
+
+.search-input {
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(22, 24, 35, 0.06);
+    border-radius: 92px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    input {
+        margin-left: 16px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        flex: 1;
+        color: var(--black);
+        font-family: sans-serif;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        height: 100%;
+        background: transparent;
+        padding: 0px;
+        width: 292px;
+    }
+
+    input:not(:placeholder-shown) ~ .search-btn {
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    input:not(:placeholder-shown) ~ .clear-btn {
+        display: block;
+    }
+
+    .clear-btn {
+        padding: 16px;
+        color: rgba(22, 24, 35, 0.34);
+        cursor: pointer;
+        display: none;
+    }
+
+    .loading-btn {
+        display: none;
+        padding: 16px;
+        color: rgba(22, 24, 35, 0.34);
+        background-color: transparent;
+        animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    &::before {
+        position: absolute;
+        right: 52px;
+        top: 9px;
+        content: '';
+        border-left: 1px solid rgba(22, 24, 35, 0.12);
+        height: 28px;
+    }
+
+    &:focus-within {
+        outline: 1.5px solid rgba(22, 24, 35, 0.2);
+    }
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--search-button-width);
+    height: 100%;
+    border-top-right-radius: var(--search-border-radius);
+    border-bottom-right-radius: var(--search-border-radius);
+    font-size: 1.8rem;
+    color: rgba(22, 24, 35, 0.34);
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &:active {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}

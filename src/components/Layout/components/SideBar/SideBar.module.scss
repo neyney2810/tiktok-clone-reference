@@ -1,0 +1,18 @@
+.relative {
+    position: relative;
+}
+
+.scroll-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    width: 356px;
+    z-index: 99;
+}
+
+.wrapper {
+    padding: 20px 8px 26px 0;
+}
