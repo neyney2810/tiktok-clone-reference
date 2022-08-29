@@ -1,0 +1,27 @@
+.suggest {
+    display: flex;
+    flex-direction: row;
+    padding: 9px 16px;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    margin-left: 8px;
+    align-self: center;
+}
+
+.content {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

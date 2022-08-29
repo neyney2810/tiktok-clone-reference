@@ -1,0 +1,51 @@
+.right-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-btn {
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+.login-btn {
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+.menu-btn {
+    margin-left: 16px;
+    padding: 0 4px;
+    height: 20px;
+    width: 28px;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.user-avatar {
+    height: 32px;
+    width: 32px;
+    margin-left: 24px;
+    border-radius: 50%;
+}
+
+.message-icon {
+    margin-left: 16px;
+}
+
+.inbox-icon {
+    margin-left: 16px;
+}
+
+.action-btn {
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    background-color: var(--white);
+    cursor: pointer;
+}

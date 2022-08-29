@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import SideBar from '../components/SideBar';
 import styles from './DefaultLayout.module.scss';
+import Tippy from '@tippyjs/react/headless'; // different import path!
 
 const cx = classNames.bind(styles);
 

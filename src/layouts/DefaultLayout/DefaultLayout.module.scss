@@ -17,8 +17,6 @@
 .content {
     flex: 1;
     min-height: 100px;
-    background-color: #777;
-    position: relative;
     width: var(--default-layout-content-width, 692px);
     max-width: var(--default-layout-content-width, 692px);
 }

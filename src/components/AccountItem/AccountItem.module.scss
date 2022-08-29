@@ -1,0 +1,52 @@
+.account {
+    display: flex;
+    flex-direction: row;
+    padding: 9px 16px;
+    cursor: pointer;
+    align-items: center;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    .check {
+        position: relative;
+        top: -4px;
+        margin-left: 6px;
+        color: rgb(32, 213, 236);
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.username {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
